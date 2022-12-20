@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test</title>
+    <script>
+        function enable_statistics() {
+            console.log("Enable statistics called");
+        }
+        function enable_marketing() {
+            console.log("Enable marketing called");
+        }
+        function disable_statistics() {
+            console.log("Disable statistics called");
+        }
+        function disable_marketing() {
+            console.log("Disable marketing called");
+        }
+    </script>
+    <script src="./dist/cookie-consent.js"></script>
+    <noscript data-cookie-category="marketing">console.log("I am marketing");</noscript>
+    <noscript data-cookie-category="analytics">console.log("I am analytics");</noscript>
+</head>
+<body>
+    <h1>Hej hej</h1>
+    <p>Detta är en testfil</p>
+    <button onclick="cookieConsent.showConsentForm()">Open Cookie Form</button>
+</body>
+</html>

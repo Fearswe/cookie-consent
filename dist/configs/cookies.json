@@ -1,0 +1,22 @@
+[
+    {
+        "name": "session",
+        "category": "mandatory",
+        "httponly": true
+    },
+    {
+        "name": "cookieconsent_status",
+        "category": "mandatory",
+        "httponly": false
+    },
+    {
+        "name": "_ga",
+        "category": "analytics",
+        "httponly": false
+    },
+    {
+        "name": "some-marketing-cookie",
+        "category": "marketing",
+        "httponly": false
+    }
+]

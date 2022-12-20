@@ -1,0 +1,16 @@
+[
+    {
+        "name": "mandatory",
+        "required": true
+    },
+    {
+        "name": "statistics",
+        "required": false,
+        "onenable": "enable_statistics",
+        "ondisable": "disable_statistics"
+    },
+    {
+        "name": "marketing",
+        "required": false     
+    }
+]

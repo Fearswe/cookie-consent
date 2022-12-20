@@ -1,0 +1,76 @@
+#cookie-consent-form_wrapper {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid #1B4E3B;
+  z-index: 999999999;
+  display: none;
+  margin: 0;
+  border-radius: 5px;
+}
+#cookie-consent-form_wrapper.cookie-consent-form_visible {
+  display: block;
+}
+#cookie-consent-form_wrapper #cookie-consent-form {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#cookie-consent-form_wrapper #cookie-consent-form .cookie-consent-form_button {
+  cursor: pointer;
+  background-color: #9EDEC6;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1B4E3B;
+  padding: 5px 10px;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_header {
+  margin: 0 10px;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 0 10px;
+  padding-top: 10px;
+  border-top: 1px solid #1B4E3B;
+  border-radius: 2px;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 10px;
+  padding-top: 10px;
+  font-size: 1.2rem;
+  border-top: 1px solid #1B4E3B;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_button {
+  float: right;
+  border-color: #1B4E3B;
+  background-color: #9EDEC6;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2px;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_button[data-toggle-state="deny"] {
+  background-color: #de9eb6;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_description {
+  font-size: 1rem;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_footer {
+  margin: 0 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #1B4E3B;
+}

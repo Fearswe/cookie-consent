@@ -1,0 +1,49 @@
+{
+    "general": {
+        "title": "Cookie Consent",
+        "description": "This website uses cookies to ensure you get the best experience on our website.",
+        "policylink": "https://www.example.com/cookie-policy",
+        "policylinktext": "Cookie Policy",
+        "dismiss": "Got it!",
+        "allowall": "Allow all",
+        "denyall": "Deny all",
+        "allow": "Allow",
+        "deny": "Deny"
+    },
+    "categories": [
+        {
+            "name": "mandatory",
+            "displayname": "Mandatory",
+            "description": "These are mandatory cookies and used for the website to function properly"
+        },
+        {
+            "name": "statistics",
+            "displayname": "Statistics",
+            "description": "Thse are used for collecting statistics about how the website is used"
+        },
+        {
+            "name": "marketing",
+            "displayname": "Marketing",
+            "description": "These are used for marketing purposes such as ads"
+        }
+    ],
+    "cookies": [
+        {
+            "name": "session",
+            "description": "Used to keep track of which user is logged in"
+        },
+        {
+            "name": "cookieconsentstatus",
+            "description": "Used to keep track of cookie consent and which cookies the user has accepted"
+        },
+        {
+            "name": "_ga",
+            "description": "These are used for collecting statistics about how the website is used through Google Analytics",
+            "moreinfo": "https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage"
+        },
+        {
+            "name": "some-marketing-cookie",
+            "description": "This is a marketing cookie"
+        }
+    ]
+}

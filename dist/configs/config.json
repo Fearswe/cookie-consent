@@ -1,0 +1,9 @@
+{
+    "fallbacklanguage": "en",
+    "showformoninit": true,
+    "showformoninitdelay": 0,
+    "parentelement": "body",
+    "preventonpaths": [
+        "/excluded"
+    ]
+}

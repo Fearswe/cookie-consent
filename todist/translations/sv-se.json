@@ -1,0 +1,49 @@
+{
+    "general": {
+        "title": "Cookie Consent",
+        "message": "Denna hemsida använder kakor för att förbättra din upplevelse.",
+        "policylink": "https://www.example.com/cookie-policy",
+        "policylinktext": "Cookie Policy",
+        "description": "Färdig",
+        "allowall": "Tillåt alla",
+        "denyall": "Avvisa alla",
+        "allow": "Tillåt",
+        "deny": "Avvisa"
+    },
+    "categories": [
+        {
+            "name": "mandatory",
+            "displayname": "Obligatoriska",
+            "description": "Dessa är obligatoriska och krävs för att hemsidan ska fungera"
+        },
+        {
+            "name": "statistics",
+            "displayname": "Statistik",
+            "description": "Dessa används för att samla in statistik om hur hemsidan används"
+        },
+        {
+            "name": "marketing",
+            "displayname": "Marknadsföring",
+            "description": "Dessa används för att skräddarsy innehåll och annonser"
+        }
+    ],
+    "cookies": [
+        {
+            "name": "session",
+            "description": "Används för att hålla reda på vilken användare som är inloggad"
+        },
+        {
+            "name": "cookieconsent_status",
+            "description": "Används för att hålla reda på om besökaren har accepterat kakor, och vilka kakor som accepterats"
+        },
+        {
+            "name": "_ga",
+            "description": "Dessa används för att samla in statistik om hur hemsidan används genom Google Analytics",
+            "moreinfo": "https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage"
+        },
+        {
+            "name": "some-marketing-cookie",
+            "description": "Detta är en marknadsföringskaka"
+        }
+    ]
+}
