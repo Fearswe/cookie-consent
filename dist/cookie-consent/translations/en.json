@@ -8,7 +8,9 @@
         "allowall": "Allow all",
         "denyall": "Deny all",
         "allow": "Allow",
-        "deny": "Deny"
+        "deny": "Deny",
+        "cookies": "Cookies",
+        "cookiemoreinfotext": "More info"
     },
     "categories": [
         {

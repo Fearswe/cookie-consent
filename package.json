@@ -2,17 +2,14 @@
   "name": "cookie-consent",
   "version": "1.0.0",
   "description": "",
-  "main": "./build/cookie-consent.js",
-  "types": "./build/cookie-consent.d.ts",
-  "files": [
-    "build/**/*"
-  ],
+  "main": "./dist/cookie-consent/cookie-consent.js",
+  "types": "./dist/cookie-consent/cookie-consent.d.ts",
   "scripts": {
     "install": "npm ci",
-    "clean": "rm -rf dist/*",
+    "clean": "rm -rf dist/cookie-consent/*",
     "build": "npm run clean && npm run copy-config && npm run less && tsc",
-    "less": "npx lessc ./src/style.less ./dist/cookie-consent-form.css",
-    "copy-config": "cp -R todist/* dist",
+    "less": "npx lessc ./src/style.less ./dist/cookie-consent/cookie-consent-form.css",
+    "copy-config": "cp -R todist/* dist/cookie-consent",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix",
     "test:ci": "jest",

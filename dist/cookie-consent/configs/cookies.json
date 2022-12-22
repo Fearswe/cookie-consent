@@ -15,6 +15,12 @@
         "httponly": false
     },
     {
+        "name": "_ga_ID",
+        "category": "analytics",
+        "httponly": false,
+        "regex": "_ga_.*"
+    },
+    {
         "name": "some-marketing-cookie",
         "category": "marketing",
         "httponly": false

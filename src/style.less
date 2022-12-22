@@ -2,21 +2,31 @@
 @button-color: #9EDEC6;
 @button-secondary-color: #de9eb6;
 
+@form-height: 500px;
+@form-width: 400px;
+
+@text-color: #000;
+@background-color: #fff;
+
+@link-color: #1B4E3B;
+@link-hover-color: #9EDEC6;
+
 #cookie-consent-form_wrapper {
     position: fixed;
     bottom: 10px;
     left: 10px;
-    width: 400px;
-    height: 500px;
-    background-color: #fff;
+    width: @form-width;
+    height: @form-height;
+    background-color: @background-color;
     border: 1px solid @border-color;
     z-index: 999999999;
     display: none;
     margin: 0;
     border-radius: 5px;
+    color: @text-color;
 
     &.cookie-consent-form_visible {
-        display: block;    
+        display: block;
     }
 
     #cookie-consent-form {
@@ -37,7 +47,29 @@
         }
 
         #cookie-consent-form_header {
-            margin: 0 10px;
+            margin: 0 15px;
+
+            #cookie-consent-form_heading {
+                margin: 10px 0 5px 0;
+                
+            }
+
+            #cookie-consent-form_policylink {
+                color: @link-color;
+                text-decoration: underline;
+                cursor: pointer;
+
+                display: inline-block;
+                margin: 5px 0;
+                &:hover {
+                    color: @link-hover-color;
+                }
+            }
+
+            #cookie-consent-form_description {
+                margin: 0;
+            }
+
         }
 
         #cookie-consent-form_buttons {
@@ -49,7 +81,7 @@
             border-top: 1px solid @border-color;
             border-radius: 2px;
         }
-    
+
         #cookie-consent-form_categories {
             flex-grow: 1;
             display: flex;
@@ -57,10 +89,16 @@
             gap: 10px;
             margin: 0 10px;
             padding-top: 10px;
-            font-size: 1.2rem;
+            font-size: 1rem;
 
             border-top: 1px solid @border-color;
-        
+
+            .cookie-consent-form_category_label {
+                margin: 0;
+                padding: 0;
+                display: inline;
+            }
+
             .cookie-consent-form_category_button {
                 float: right;
                 border-color: @border-color;
@@ -76,11 +114,36 @@
 
 
             .cookie-consent-form_category_description {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
 
-            .cookie-consent-form_category_label {
+            .cookie-consent-form_category_cookie_list {
+                font-size: 0.8rem;
+                margin: 0 0 0 10px;
 
+                .cookie-consent-form_category_cookie_list_heading {
+                    margin: 0;
+                    padding: 0;
+                    display: inline;
+                }
+
+                .cookie-consent-form_category_cookie_list_item {
+                    margin: 5px 0 10px 0;
+
+                    .cookie-consent-form_category_cookie_list_item_moreinfo {
+                        color: @link-color;
+                        text-decoration: underline;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: @link-hover-color;
+                        }
+                    }
+
+                    .cookie-consent-form_category_cookie_list_item_description {
+                        margin: 0 0 10px 0;
+                    }
+                }
             }
         }
 
@@ -92,7 +155,6 @@
             padding-top: 10px;
             border-top: 1px solid @border-color;
         }
-    }    
+    }
 
 }
-

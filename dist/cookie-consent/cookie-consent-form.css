@@ -1,0 +1,121 @@
+#cookie-consent-form_wrapper {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid #1B4E3B;
+  z-index: 999999999;
+  display: none;
+  margin: 0;
+  border-radius: 5px;
+  color: #000;
+}
+#cookie-consent-form_wrapper.cookie-consent-form_visible {
+  display: block;
+}
+#cookie-consent-form_wrapper #cookie-consent-form {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#cookie-consent-form_wrapper #cookie-consent-form .cookie-consent-form_button {
+  cursor: pointer;
+  background-color: #9EDEC6;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1B4E3B;
+  padding: 5px 10px;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_header {
+  margin: 0 15px;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_header #cookie-consent-form_heading {
+  margin: 10px 0 5px 0;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_header #cookie-consent-form_policylink {
+  color: #1B4E3B;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px 0;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_header #cookie-consent-form_policylink:hover {
+  color: #9EDEC6;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_header #cookie-consent-form_description {
+  margin: 0;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 0 10px;
+  padding-top: 10px;
+  border-top: 1px solid #1B4E3B;
+  border-radius: 2px;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 10px;
+  padding-top: 10px;
+  font-size: 1rem;
+  border-top: 1px solid #1B4E3B;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_label {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_button {
+  float: right;
+  border-color: #1B4E3B;
+  background-color: #9EDEC6;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2px;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_button[data-toggle-state="deny"] {
+  background-color: #de9eb6;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_description {
+  font-size: 0.9rem;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_cookie_list {
+  font-size: 0.8rem;
+  margin: 0 0 0 10px;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_cookie_list .cookie-consent-form_category_cookie_list_heading {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_cookie_list .cookie-consent-form_category_cookie_list_item {
+  margin: 5px 0 10px 0;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_cookie_list .cookie-consent-form_category_cookie_list_item .cookie-consent-form_category_cookie_list_item_moreinfo {
+  color: #1B4E3B;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_cookie_list .cookie-consent-form_category_cookie_list_item .cookie-consent-form_category_cookie_list_item_moreinfo:hover {
+  color: #9EDEC6;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_categories .cookie-consent-form_category_cookie_list .cookie-consent-form_category_cookie_list_item .cookie-consent-form_category_cookie_list_item_description {
+  margin: 0 0 10px 0;
+}
+#cookie-consent-form_wrapper #cookie-consent-form #cookie-consent-form_footer {
+  margin: 0 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #1B4E3B;
+}
