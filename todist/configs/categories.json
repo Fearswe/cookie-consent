@@ -7,10 +7,13 @@
         "name": "statistics",
         "required": false,
         "onenable": "enable_statistics",
-        "ondisable": "disable_statistics"
+        "ondisable": "disable_statistics",
+        "gtmconsentstate": "analytics_storage"
+
     },
     {
         "name": "marketing",
-        "required": false     
+        "required": false  , 
+        "gtmconsentstate": "personalization_storage" 
     }
 ]

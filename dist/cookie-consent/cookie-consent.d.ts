@@ -8,6 +8,7 @@ declare class CookieCategory {
     onenable: string;
     ondisable: string;
     isAllowed: boolean;
+    gtmconsentstate: string;
     translation: {
         displayname: string;
         description: string;
@@ -47,6 +48,7 @@ declare class ConsentConfig {
     showformoninitdelay: number;
     parentelement: string;
     preventonpaths: string[];
+    enabletagmanagerconsent: boolean;
 }
 /**
  * Stores general translation data for the cookie consent form
@@ -64,6 +66,22 @@ declare class GeneralConsentTexts {
     cookies: string;
     cookiemoreinfotext: string;
 }
+declare enum LogLevel {
+    error = 1,
+    warn = 2,
+    debug = 3
+}
+declare enum GtmConsentStateType {
+    ad_storage = "ad_storage",
+    analytics_storage = "analytics_storage",
+    functionality_storage = "functionality_storage",
+    personalization_storage = "personalization_storage",
+    security_storage = "security_storage"
+}
+declare enum GtmConsentState {
+    denied = "denied",
+    granted = "granted"
+}
 declare class CookieConsent {
     consentCookie: ConsentCookie;
     private allCategories;
@@ -79,6 +97,8 @@ declare class CookieConsent {
     private resourcePathConfigs;
     private consentCookieName;
     private wrapper;
+    private logLevel;
+    private anyWindow;
     constructor();
     /**
      * Helper method to get a category by name
@@ -98,6 +118,21 @@ declare class CookieConsent {
      * @returns a DOM element
      */
     private createElement;
+    /**
+     * Helper method to log an error
+     * @param message The message to log
+     */
+    private logError;
+    /**
+     * Helper method to log a warning
+     * @param message The message to log
+     */
+    private logWarning;
+    /**
+     * Helper method to log a debug message
+     * @param message The message to log
+     */
+    private logDebug;
     /**
      * Helper method to disable a script tag
      * @param scriptTag The script tag to disable
@@ -246,16 +281,17 @@ declare class CookieConsent {
      * @returns True if the cookie exists, false otherwise
      */
     private cookieExists;
+    private updateGtmConsentState;
     /**
      * Call to allow a single category
      * @param category The category to allow
      */
-    allowCategory(category: CookieCategory): void;
+    allowCategory(category: CookieCategory, save?: boolean, updateButtonState?: boolean): void;
     /**
      * Call to deny a single category
      * @param category The category to deny
      */
-    denyCategory(category: CookieCategory): void;
+    denyCategory(category: CookieCategory, save?: boolean, updateButtonState?: boolean): void;
     /**
      * Call to allow all categories
      */
@@ -273,8 +309,10 @@ declare class CookieConsent {
      * Helper method to inject the stylesheet
      */
     private loadStyleSheet;
+    private initGoogleTagManager;
     /**
      * Initialize the coookie consent tracker
      */
     init(): Promise<void>;
+    private waitForGtag;
 }

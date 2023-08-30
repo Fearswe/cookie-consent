@@ -3,7 +3,9 @@
     "showformoninit": true,
     "showformoninitdelay": 0,
     "parentelement": "body",
+    "enabletagmanagerconsent": true,
     "preventonpaths": [
         "/excluded"
-    ]
+    ],
+    "loglevel": "debug"
 }
