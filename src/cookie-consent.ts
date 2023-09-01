@@ -825,7 +825,7 @@ class CookieConsent {
         }
     }
 
-    
+
     /**
      * Helper method to inject the stylesheet
      */
