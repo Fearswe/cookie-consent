@@ -861,7 +861,6 @@ class CookieConsent {
             const payload = Object.values(GtmConsentStateType).map(k => {
                 return { [k]: GtmConsentState.denied };
             });
-            console.log("payload", payload);
             this.anyWindow.gtag("consent", "default", payload);
         }
     }
